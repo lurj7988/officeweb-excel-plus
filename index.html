@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${name}</title>
+  <!-- globally import the style files and js files of luckysheet at here  -->
+  <!-- 在这里全局引入luckysheet的样式文件和js文件  -->
+  <link rel="stylesheet" href="/luckysheet/dist/plugins/css/pluginsCss.css" />
+  <link rel="stylesheet" href="/luckysheet/dist/plugins/plugins.css" />
+  <link rel="stylesheet" href="/luckysheet/dist/css/luckysheet.css" />
+  <link rel="stylesheet" href="/luckysheet/dist/assets/iconfont/iconfont.css" />
+  <script src="/luckysheet/dist/plugins/js/plugin.js"></script>
+  <script src="/luckysheet/dist/luckysheet.umd.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+  <script type="text/javascript">
+    // const excelname = '${name}';
+    // const excelurl = '${url}';
+    window.appSettings = { excelname: '${name}', excelurl: '${url}' };
+  </script>
+</body>
+
+</html>
